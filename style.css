@@ -1,0 +1,29 @@
+body{
+    background: #332820;
+}
+
+h1{
+    color: #3C5B1C;
+    position: relative;
+    margin-left: 50%;
+    size: 10;
+}
+
+p{
+    color: #96429E;
+    position: relative;
+    margin: 0.5%;
+}
+
+#svr{
+    position: absolute;
+    top: 0.5%;
+    left: 96%;
+    margin-right: 0.5%;
+}
+
+#nrtgif{
+    position: absolute;
+    top: 86.5%;
+    left: 0%;
+}
