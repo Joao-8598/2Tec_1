@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 340px;
+    height: 170px;
+    float: left;
+    perspective: 1000px;
+}
+
+.card .frente {
+    position: absolute;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: all .4s linear;
+}
+
+.card .fundo {
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .4s linear;
+    filter: grayscale(100%);
+}
+
+.card:hover .frente {
+    transform: rotateY(-180deg);
+    cursor: pointer;
+}
+
+.card:hover .fundo {
+    transform: rotateY(0deg);
+    cursor: pointer
+}
+
+.card h2 {
+    background-color: black;
+    color: white;
+    width: 100%;
+    bottom: 30px;
+    position: absolute;
+    opacity: .7;
+    text-align: center;
+}
