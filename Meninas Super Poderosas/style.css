@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    animation: backgroundChange 10s infinite;
+    overflow-y: hidden;
+}
+
+@keyframes backgroundChange {
+    0% {
+        background-color: #f48fb1;
+    }
+
+    50% {
+        background-color: #ffeb3b;
+    }
+    
+    100% {
+        background-color: #80deea;
+    }
+}
+
+header {
+    background: linear-gradient(to right, #e91e63, #f48fb1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    padding: 15px 0;
+    height: 20vh;
+}
+
+header h1 {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color .3s;
+}
+
+nav ul li a:hover {
+    color: #fff176;
+}
+
+footer {
+    background: linear-gradient(to right, #e91e63, #f48fb1);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 10vh;
+}
+
+.icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.icons a:hover {
+    color: #fff176;
+}
+
+.parallax {
+    background-image: url(historia.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.parallax .content {
+    background:rgba(0, 0, 0, .5);
+    padding: 50px 30px;
+    border-radius: 10px;
+    width: 70vw;
+}
+
+h2 {
+    margin: 20px 0;
+    color: #e91e63;
+}
+
+#personagens {
+    height: 70vh;
+}
+
+.personagens-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    height: 70vh;
+}
+
+.personagem {
+    width: 200px;
+    cursor: pointer;
+    transition: transform .3s, filter .3s;
+    text-align: center;
+}
+
+.personagem img {
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    transition: transform .3s, box-shadow .3s;
+}
+
+.personagem:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
+}
+
+.personagem:active img {
+    transform: scale(1.2);
+    filter: brightness(0.8);
+}
