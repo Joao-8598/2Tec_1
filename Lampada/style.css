@@ -1,0 +1,25 @@
+body{
+    background-color: #fffbc1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color: #740bb9;
+    border: none;
+    border-radius: 15rem;
+    width: 10rem;
+    height: 1.5rem;
+    box-shadow: 7px 7px #000000;
+
+}
+button:hover{
+    background-color: #fff129;
+}
