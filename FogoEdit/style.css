@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fogo {
+    background-image: url(Campfire_JE2_BE2.webp);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+}
+
+h1 {
+    font-weight: 9000;
+    font-size: 60px ;
+}
+
+h1:hover {
+    color: rgb(255, 145, 0);
+}
