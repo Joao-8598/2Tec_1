@@ -1,0 +1,148 @@
+/* style.css */
+
+/* Reset básico para remover margens e preenchimentos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: rgb(214, 214, 214);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    font-weight: bolder;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo do botão */
+button {
+    background-color: black;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color:  white;
+    
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+/* Estilo da seção principal */
+main {
+    padding: 20px;
+}
+
+/* Estilo das seções */
+section {
+    margin-bottom: 20px;
+}
+
+section h2, section h3 {
+    margin-bottom: 10px;
+    color: red;
+}
+
+section input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: black;
+    color: white
+}
+
+/* Estilo das ofertas */
+#oferta, #comprimido, #injecao {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#oferta div, #comprimido div, #injecao div {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    flex: 1 1 30%; /* Tamanho flexível */
+}
+
+#oferta img, #comprimido img, #injecao img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilo do rodapé */
+footer {
+    background: #b6b6b6;   
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer span {
+    display: block;
+    margin-top: 10px;
+}
+
+#propa {
+    width: 375px;
+}
+
+#propaa {
+    width: 320px;
+}
+
+#pesq{
+    display: flex;
+    margin: auto;
+    width: 300px;
+    height: 30px;
+    border-radius: 50px;
+}
